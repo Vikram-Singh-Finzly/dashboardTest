@@ -1,25 +1,25 @@
-<div class="bankos-header">
-    <img src="assets/images/finzlyBankOS_xparent.png" style="width:300px;"/>
-    <img class="bankos-header-right" src="assets/images/header-panel.png" style="width:400px;"/>
+<div class="bankos-dashboard-header">
+  <img src="assets/images/finzlyBankOS_xparent.png" style="width:300px;"/>
+  <img class="bankos-dashboard-header-right" src="assets/images/header-panel.png" style="width:400px;"/>
 </div>
-<div class="bankos-container">
-    <div class="bankos-row">
-      <div class="bankos-col-10"> </div>
-      <div class="bankos-col-2 bankos-mt-3">
-        <ng-multiselect-dropdown
-        [placeholder]="'Select Widgets'"
-        [settings]="dropdownSettings"
-        [data]="dropdownList"
-        [(ngModel)]="selectedItems"
-        (onSelect)="onItemSelect($event)"
-        (onDeSelect)="onItemDeSelect($event)"
-        (onSelectAll)="onSelectAll($event)"
-        (onDeSelectAll)="onDeSelectAll($event)">
-      </ng-multiselect-dropdown>
-    </div>
+<div class="bankos-dashboard-container">
+  <div class="bankos-dashboard-row">
+    <div class="bankos-dashboard-col-10"> </div>
+    <div class="bankos-dashboard-col-2 bankos-dashboard-mt-3">
+      <ng-multiselect-dropdown
+      [placeholder]="'Select Widgets'"
+      [settings]="dropdownSettings"
+      [data]="dropdownList"
+      [(ngModel)]="selectedItems"
+      (onSelect)="onItemSelect($event)"
+      (onDeSelect)="onItemDeSelect($event)"
+      (onSelectAll)="onSelectAll($event)"
+      (onDeSelectAll)="onDeSelectAll($event)">
+    </ng-multiselect-dropdown>
+  </div>
 </div>
 
 
-<div class="bankos-container">
-    <bankos-dashboard [widgetsData]="dashboardConfigTemp"></bankos-dashboard>
+<div class="bankos-dashboard-container">
+  <bankos-dashboard [widgetsData]="dashboardConfigTemp"></bankos-dashboard>
 </div>
