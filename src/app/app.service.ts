@@ -282,7 +282,7 @@ export class DataService {
             dispColNm: "Status"
         }
     ],
-    sort: ["header1"],
+    sort: [],
     data: [{
             fileName: {
                 value: "ACH_06072020.ach"
@@ -302,7 +302,7 @@ export class DataService {
         },
        {
         fileName: {
-        value: "ACH_06072020.ach",
+        value: "BCH_06072020.ach",
         link: "https://abc.com/",
         script: "BASE64 String"
       },
@@ -321,7 +321,7 @@ export class DataService {
     },
     {
         fileName: {
-            value: "ACH_06072020.ach"
+            value: "AzH_06072020.ach"
         },
         totalDebit:{
             value: "$5023.36",
@@ -338,23 +338,23 @@ export class DataService {
     },
     {
         fileName: {
-            value: "ACH_06072020.ach"
+            value: "DCH_06072020.ach"
         },
         totalDebit:{
-            value: "$5023.36",
+            value: "$53.36",
             link: "",
         },
         totalCredit: {
             value: "$0.00"
         },
         status: {
-            value: "Approved",
+            value: "Cancelled",
         },
         params: {
         }
     },{
         fileName: {
-            value: "ACH_06072020.ach"
+            value: "DVF_06072020.ach"
         },
         totalDebit:{
             value: "$5023.36",
@@ -364,7 +364,7 @@ export class DataService {
             value: "$0.00"
         },
         status: {
-            value: "Approved",
+            value: "Rejected",
         },
         params: {
         }
@@ -413,7 +413,7 @@ widget3Data={
             dispColNm: "Total Count"
         }
     ],
-    sort: ["header1"],
+    sort: [],
     data: [{
             searchFilter: {
                 value: "Exception"
@@ -431,7 +431,7 @@ widget3Data={
                 script: "BASE64 String"
             },
             totalCount:{
-                value: "20"
+                value: "50"
             },
             params: {
             }
@@ -458,12 +458,22 @@ widget3Data={
         },
         {
             searchFilter: {
+                value: "MSP Payments"
+            },
+            totalCount:{
+                value: "300"
+            },
+            params: {
+            }
+        },
+        {
+            searchFilter: {
                 value: "Sample Payment",
                 link: "https://abc.com/",
                 script: "BASE64 String"
             },
             totalCount:{
-                value: "35"
+                value: "350"
             },
             params: {
             }

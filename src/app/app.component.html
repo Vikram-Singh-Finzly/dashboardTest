@@ -1,11 +1,11 @@
+<div class="bankos-dashboard-container" style="width: 100%;">
 <div class="bankos-dashboard-header">
   <img src="assets/images/finzlyBankOS_xparent.png" style="width:300px;"/>
-  <img class="bankos-dashboard-header-right" src="assets/images/header-panel.png" style="width:400px;"/>
+  <img class="bankos-dashboard-header-right" src="assets/images/header-panel.png" style="width:300px;"/>
 </div>
-<div class="bankos-dashboard-container">
   <div class="bankos-dashboard-row">
-    <div class="bankos-dashboard-col-10"> </div>
-    <div class="bankos-dashboard-col-2 bankos-dashboard-mt-3">
+    <div class="bankos-dashboard-col-8"> </div>
+    <div class="bankos-dashboard-col-3 bankos-dashboard-mt-3">
       <ng-multiselect-dropdown
       [placeholder]="'Select Widgets'"
       [settings]="dropdownSettings"
@@ -16,10 +16,10 @@
       (onSelectAll)="onSelectAll($event)"
       (onDeSelectAll)="onDeSelectAll($event)">
     </ng-multiselect-dropdown>
-  </div>
 </div>
-
-
+</div>
+</div>
 <div class="bankos-dashboard-container">
   <bankos-dashboard [widgetsData]="dashboardConfigTemp"></bankos-dashboard>
 </div>
+
